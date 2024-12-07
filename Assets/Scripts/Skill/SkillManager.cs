@@ -12,6 +12,8 @@ namespace Skill
         public Sword_Skill sword { get; private set; }
         public BlackHole_Skill blackHole { get; private set; }
 
+        public Crystal_Skill crystal { get; private set; }
+
         private void Awake()
         {
             if (instance != null)
@@ -26,6 +28,7 @@ namespace Skill
             clone = GetComponent<Clone_Skill>();
             sword = GetComponent<Sword_Skill>();
             blackHole = GetComponent<BlackHole_Skill>();
+            crystal = GetComponent<Crystal_Skill>();
         }
     }
 }
